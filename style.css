@@ -1,0 +1,223 @@
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('ChatGPT Image Nov 22, 2025, 09_27_06 PM.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+}
+.btn {
+    display: block;        /* vertical layout এ লাগে */
+    text-decoration: none; /* underline remove */
+    color: white;          /* button text color */
+}
+
+/* Head Calligraphy */
+.head {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Logo */
+.logo-container {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px black;
+}
+
+/* Unit Name */
+.unit-name {
+    margin-top: 15px;
+    font-size: 45px;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow:
+        0 0 5px #000000,
+        0 0 10px #000000,
+        0 0 15px #000000,
+        0 0 20px #000000,
+        0 0 25px #000000;
+    transition: all 0.3s ease;
+}
+
+.unit-name:hover {
+    text-shadow:
+        0 0 7px #000000,
+        0 0 14px #000000,
+        0 0 20px #000000,
+        0 0 25px #000000,
+        0 0 30px #000000;
+    cursor: pointer;
+}
+
+/* Vertical Buttons */
+.vertical-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* distance from unit name */
+    gap: 25px; /* space between buttons */
+}
+
+.vertical-buttons .btn {
+    height: 60px;           /* button height */
+    width: 250px;           /* aro boro width */
+    font-size: 20px;        /* boro text */
+    font-weight: bold;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    border: solid #404c5d 1px;
+    border-radius: 8px;
+    font-family: Consolas, Courier New, monospace;
+    color: rgb(220, 220, 220);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+                inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    transition: 500ms;
+}
+
+
+.vertical-buttons .btn:hover {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #ffffff;
+}
+
+.vertical-buttons .btn:active {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #ffffff;
+    transition: 100ms;
+}
+/* Horizontal Social Buttons at Bottom */
+/* Same Position as before */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Round Uiverse Style Icons */
+.social-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;      /* icon size placeholder */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+/* FACEBOOK */
+.fb-round-btn {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #000;              /* Black background */
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #1877f2;                /* Facebook blue logo color */
+    font-size: 32px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.fb-round-btn:hover {
+    background: #1877f2;           /* Hover -> Blue */
+    color: #fff;                   /* Logo becomes white */
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(24,119,242,0.6);
+}
+
+
+/* TELEGRAM */
+.tg-round-btn {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #000;              /* Black background */
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #0088cc;                /* Telegram blue */
+    font-size: 32px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.tg-round-btn:hover {
+    background: #0088cc;           /* Hover -> Telegram blue */
+    color: #fff;                   /* Logo turns white */
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,136,204,0.55);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .unit-name {
+        font-size: 35px;
+    }
+
+    .btn.social-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .head img {
+        width: 90%;
+    }
+}
+.fb-round-btn{
+    display: block;        /* vertical layout এ লাগে */
+    text-decoration: none; /* underline remove */
+   
+}
+.tg-round-btn {
+    display: block;        /* vertical layout এ লাগে */
+    text-decoration: none; /* underline remove */
+  
+}
