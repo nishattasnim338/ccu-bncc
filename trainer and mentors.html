@@ -19,6 +19,36 @@
     <!-- Unit Name -->
     <div class="unit-name">Cyber Crime Unit - BNCC</div>
 
+      <!-- SECTION 2: Team Owner -->
+    <section class="section">
+        <h2 class="title">Team Owner</h2>
+        <div class="info-box">
+             <p class="name">Md Ashequr Rahman — CEO & Founder</p>
+            <p class="name">Kevin Mitnik — Co-Founder</p>
+        </div>
+    </section>
+
+
+    <!-- SECTION 3: Trainers -->
+    <section class="section">
+        <h2 class="title">Trainers</h2>
+        <div class="info-box">
+           <p class="name">Eshan Chowdhury — Senior Trainer</p>
+            <p class="name">Tanim — Trainer</p>
+            <p class="name">Md Shimul — Trainer</p>
+        </div>
+    </section>
+
+
+    <!-- SECTION 4: Admins -->
+    <section class="section">
+        <h2 class="title">Admin & Administrator</h2>
+        <div class="info-box">
+             <p class="name">Md Naeem — Senior Admin</p>
+            <p class="name">Sadeque Rahman Samrat — Administrator & Admin</p>
+        </div>
+    </section>
+
 </body>
 <style>
 /* Body */
@@ -35,7 +65,109 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
     color: white;
+    background-attachment: fixed;
 }
+.section-box {
+    margin-top: 25px;
+    width: 85%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Title */
+/* Strong Premium Title */
+.title {
+    font-size: clamp(26px, 6vw, 48px); /* auto responsive */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+
+    text-shadow: 0 0 7px #ffffff, 0 0 12px #000000, 0 0 18px #000000, 0 0 28px #000000, 0 0 45px #000000;
+}
+
+.title::after {
+    content: "";
+    width: clamp(60px, 20vw, 120px); /* responsive underline */
+    height: 4px;
+    background: linear-gradient(90deg, #000000, #ffffff, #000000);
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 3px;
+    box-shadow: 0 0 8px #000;
+}
+
+
+
+
+/* Info Box – Premium Card Style */
+.info-box {
+    background: rgba(255, 255, 255, 0.10);
+    padding: 25px;
+    border-radius: 18px;
+
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(0, 0, 0, 0.8);
+
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.info-box:hover {
+    transform: scale(1.03);
+    box-shadow:
+        0 4px 25px rgba(0, 0, 0, 0.9),
+        0 0 25px rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+/* Inside name items */
+.name {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 12px 0;
+    padding: 12px 0;
+    text-align: center;
+
+    color: #ffffff;
+
+    /* Black Glow Around Text */
+    text-shadow:
+        0 0 4px black,
+        0 0 7px black,
+        0 0 12px black;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.name:last-child {
+    border-bottom: none;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .name {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+}
+
+
+/* Last item border remove */
+.name:last-child {
+    border-bottom: none;
+}
+
 
 /* Header image */
 .head {
