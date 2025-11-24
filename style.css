@@ -35,7 +35,7 @@ body {
 .logo {
     width: 150px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 100px;
     box-shadow: 0 0 20px black;
     transition: all 0.3s ease;
 }
@@ -220,4 +220,5 @@ body {
     display: block;        /* vertical layout এ লাগে */
     text-decoration: none; /* underline remove */
   
+
 }
